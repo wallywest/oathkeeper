@@ -1,0 +1,1 @@
+require 'oathkeeper/client/mongo'

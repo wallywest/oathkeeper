@@ -1,0 +1,11 @@
+development:
+  hosts:
+    - 'localhost:27017'
+  db: "audits_devel"
+  collection: "audits_dev"
+
+test:
+  hosts:
+    - 'localhost:27017'
+  db: "audits_devel"
+  collection: "audits_test"

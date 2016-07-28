@@ -1,0 +1,87 @@
+#_ AND filter_b) - filter_c - filter_dHECK THIS LATER
+CacheRefresh
+ {{user}} did a cache refresh
+Session
+  {{user}} logged in/logged out
+CacheUrl
+  {{user}} updated/created CacheUrls
+Operation
+  - fields: vlabel_group,operation
+  {{user}} updated/created operation {{operation}} with vlabel_group {{vlabel_group}}
+User
+  {{user}} updated/created/destroyed user account for user {{first_name}}
+PromptSet
+  {{user}} updated/created/destroyed PromptSet {{name}}
+  Slot
+    {{user}} added Slot to PromptSet {{name}}
+AniGroup
+  {{user}} updated/created/destroyed AniGroup {{name}}
+  AniMap
+    {{user}} create/destroy AniMap {{ani}}
+Dli
+  {{user}} created/updated/destroyed MegaTrunk {{value}}
+  Li
+    changed created/updated {{value}} Lis
+    changed created/updated {{value}} Destinations
+PrerouteSelection
+UserCompany
+  {{user}} gave access to {{app_id}} for {{user_id}}
+BusinessUnit
+  {{user}} created/updated/destroyed {{name}}
+Destination
+  {{user}} created/updated/destroyed {{destination_title}}
+Company
+  {{user}} created/updated/destroyed settings for {{name}}
+RaccDst
+  {{user}} created/updated/destroyed settings for {{dst_name}}
+
+#INVESTIGATE THIS CASE
+GeoRouteGroup
+  {{user}} created/updated/destroyed GeoRouteGroup {{name}}
+  AniGroup created/updated/destroyed {{name}} through {{GeoRouteAniXref}}
+Group
+  {{user}} created/updated/destroyed Group {{display_name}}
+  Can have updated events that only show Operations Update
+  set survey_group_id to 1
+DestinationValidationFormat
+  {{user}} created/updated/destroyed DestinationValidationFormat {{name}}
+TransferMap
+  {{user}} created/updated/destroyed TransferMap {{transfer_string}}
+DynamicIvr
+  {{user}} created/updated/destroyed DIVR {{name}}
+VlabelMap
+  {{user}} created/updated/destroyed Vlabel {{vlabel}}
+RaccCti
+  {{user}} created/updated/destroyed CTI {{cti_name}}
+CompanyConfig
+  {{user}} created/updated/destroyed Racc Company Settings for {{app_id}}
+SurveyGroup
+  {{user}} created/updated/destroyed Survey Group for {{name}}
+DynamicIvrDestination (links dynamic_ivrs to destinations)
+DestinationProperty
+  {{user}} created/updated/destroyed DestinationProperty {{destination_property_name}}
+PrerouteGroup
+  {{user}} created/updated/destroyed PreRouteGroup {{group_name}}
+  PrerouteGrouping
+  {{user}} created/updated/destroyed PreRouteGruoping {{group_name}}
+PreRouteEditConfigs
+  {{user}} updated PreRoute Config assigned PreRouteGroup {{preroute_group.name}} to {{group.name}} or {{vlabel.name}}
+
+RecordedDnis
+  {{user}} created/updated/destroyed RecordedDnis {{parm_name}}
+Setting
+  {{user}} created/updated/destroyed Setting {{name}}
+
+FrontEndGroup
+not getting changes, assigns particular preroute/georoute/survey_group/default_route to fronend_group
+----------------------------------------------------------------------------------------
+
+Packaging Messages
+-------------------
+Package
+Profiles
+TimeSegment
+Routing
+RoutingDestination
+RaccRoute
+RaccRouteDestinationXref

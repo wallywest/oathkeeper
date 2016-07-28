@@ -1,0 +1,33 @@
+Audit
+  app_id: INT
+  ip: IPADDRESS
+  user: String
+  controller: String
+  action: String
+  events: [CollectionEvent/Event]
+  changes/count: INT
+  ts: DateTime
+  (optional)
+   
+  app_id
+  Many Events:
+    event_type: CollectionEvent
+    type: type of object in collection
+    action: action taken
+    collection: array of db_models
+
+    #optional
+    changed: hash of changes acting on every model
+    meta: has containing extra info/association
+    
+  One Event:
+    event_type: Event
+    type: type of object
+    action: action taken
+    object: db_model attributes
+    pk: Int, of object
+
+    #optional
+    changed: hash acting on single model
+    meta: has containing extra info/association
+
