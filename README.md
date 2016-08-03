@@ -62,7 +62,7 @@ This will produce the following in the meta field on an audit event
 
 
 #### Master Event
-**rename**
+
 
 Sometimes we don't care about an individual audit.  Instead when a change happens this will instead audit the event as a master_event based on the settings
 
@@ -75,7 +75,7 @@ end
 ```
 
 #### Version
-**beta**
+
 Adding a version flag will store changes of the object in a separate mongo collection as means for restoration or auditing.
 
 ```ruby
