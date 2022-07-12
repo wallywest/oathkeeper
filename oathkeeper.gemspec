@@ -20,7 +20,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency "lumberjack"
   gem.add_runtime_dependency "bson", "~>1.12.x", '<2.0.0'
 
-  gem.add_development_dependency 'activerecord', '4.1.13'
+  gem.add_development_dependency 'activerecord', '4.2.11.3'
   gem.add_development_dependency 'sqlite3' unless RUBY_PLATFORM == 'java'
   gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'rspec-rails'
